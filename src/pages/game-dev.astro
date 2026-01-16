@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Game Development">
+  <div class="space-y-8">
+    <header>
+      <h1 class="text-4xl font-bold mb-4">Game Development</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400">
+        Projects, insights, and experiences in game development.
+      </p>
+    </header>
+
+    <section class="space-y-6">
+      <div class="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
+        <h2 class="text-2xl font-bold mb-3">About My Game Dev Journey</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">
+          Game development combines creativity, technical skills, and storytelling in unique ways. 
+          It's a field where art meets code, and player experience is everything.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300">
+          Here you'll find my thoughts on game design, development processes, and the projects 
+          I'm working on. Whether it's exploring new mechanics, learning new tools, or sharing 
+          insights from the development process, this section captures my journey in game development.
+        </p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
+        <h2 class="text-2xl font-bold mb-3">Current Focus</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+          <li>Exploring game mechanics and player engagement</li>
+          <li>Learning new game development tools and frameworks</li>
+          <li>Building small experimental projects</li>
+          <li>Studying game design principles</li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
+        <h2 class="text-2xl font-bold mb-3">Interests</h2>
+        <div class="flex flex-wrap gap-2">
+          {['Game Design', 'Mechanics', 'Player Experience', 'Indie Development', 'Prototyping'].map((tag) => (
+            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded text-gray-700 dark:text-gray-300">
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+

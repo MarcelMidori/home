@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BookCard from '../components/BookCard.astro';
+
+const books = [
+  {
+    title: 'The Design of Everyday Things',
+    author: 'Don Norman',
+    year: 2013,
+    description: 'A foundational book on design principles and user experience that applies to everything from physical products to digital interfaces.',
+  },
+  {
+    title: 'Clean Code',
+    author: 'Robert C. Martin',
+    year: 2008,
+    description: 'A guide to writing clean, maintainable code with practical examples and principles that every developer should know.',
+  },
+  {
+    title: 'The Art of Game Design',
+    author: 'Jesse Schell',
+    year: 2019,
+    description: 'A comprehensive guide to game design covering mechanics, psychology, and the creative process behind great games.',
+  },
+  {
+    title: 'Thinking, Fast and Slow',
+    author: 'Daniel Kahneman',
+    year: 2011,
+    description: 'An exploration of the two systems that drive human thought and decision-making, with profound implications for design and psychology.',
+  },
+  {
+    title: 'The Pragmatic Programmer',
+    author: 'Andrew Hunt and David Thomas',
+    year: 2019,
+    description: 'Timeless advice for becoming a better programmer, covering everything from coding practices to career development.',
+  },
+  {
+    title: 'A Game Design Vocabulary',
+    author: 'Anna Anthropy and Naomi Clark',
+    year: 2014,
+    description: 'A practical guide to understanding and talking about game design, with tools for analyzing and creating games.',
+  },
+];
+---
+
+<Layout title="Books">
+  <div class="space-y-8">
+    <header>
+      <h1 class="text-4xl font-bold mb-4">Top Books</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400">
+        A collection of books I've read and highly recommend. These cover topics from 
+        design and programming to game development and psychology.
+      </p>
+    </header>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      {books.map((book) => (
+        <BookCard
+          title={book.title}
+          author={book.author}
+          description={book.description}
+          year={book.year}
+        />
+      ))}
+    </div>
+  </div>
+</Layout>
+
