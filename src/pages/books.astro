@@ -4,40 +4,88 @@ import BookCard from '../components/BookCard.astro';
 
 const books = [
   {
-    title: 'The Design of Everyday Things',
-    author: 'Don Norman',
-    year: 2013,
-    description: 'A foundational book on design principles and user experience that applies to everything from physical products to digital interfaces.',
+    title: 'The Name of The Wind',
+    author: 'Patrick Rothfuss',
+    year: 2007,
+    description: 'The first book in the Kingkiller Chronicle, following the story of Kvothe, a legendary figure telling his own tale.',
   },
   {
-    title: 'Clean Code',
-    author: 'Robert C. Martin',
-    year: 2008,
-    description: 'A guide to writing clean, maintainable code with practical examples and principles that every developer should know.',
-  },
-  {
-    title: 'The Art of Game Design',
-    author: 'Jesse Schell',
-    year: 2019,
-    description: 'A comprehensive guide to game design covering mechanics, psychology, and the creative process behind great games.',
-  },
-  {
-    title: 'Thinking, Fast and Slow',
-    author: 'Daniel Kahneman',
+    title: 'The Martian',
+    author: 'Andy Weir',
     year: 2011,
-    description: 'An exploration of the two systems that drive human thought and decision-making, with profound implications for design and psychology.',
+    description: 'A gripping science fiction novel about an astronaut stranded on Mars and his struggle for survival.',
   },
   {
-    title: 'The Pragmatic Programmer',
-    author: 'Andrew Hunt and David Thomas',
-    year: 2019,
-    description: 'Timeless advice for becoming a better programmer, covering everything from coding practices to career development.',
+    title: 'The Selfish Gene',
+    author: 'Richard Dawkins',
+    year: 1976,
+    description: 'A groundbreaking work on evolutionary biology that explains how genes drive evolution and behavior.',
   },
   {
-    title: 'A Game Design Vocabulary',
-    author: 'Anna Anthropy and Naomi Clark',
+    title: 'The Greatest Show On Earth',
+    author: 'Richard Dawkins',
+    year: 2009,
+    description: 'A compelling defense of evolution, presenting the evidence for natural selection in accessible language.',
+  },
+  {
+    title: 'Cosmos',
+    author: 'Carl Sagan',
+    year: 1980,
+    description: 'A journey through the universe exploring space, time, and humanity\'s place in the cosmos.',
+  },
+  {
+    title: 'How Not to Be Wrong: The Power of Mathematical Thinking',
+    author: 'Jordan Ellenberg',
     year: 2014,
-    description: 'A practical guide to understanding and talking about game design, with tools for analyzing and creating games.',
+    description: 'An exploration of how mathematical thinking can help us understand the world and avoid common errors in reasoning.',
+  },
+  {
+    title: 'Permanent Record',
+    author: 'Edward Snowden',
+    year: 2019,
+    description: 'The memoir of the NSA whistleblower, detailing his journey and the importance of privacy in the digital age.',
+  },
+  {
+    title: 'Why We Sleep',
+    author: 'Matthew Walker',
+    year: 2017,
+    description: 'A comprehensive exploration of sleep science, revealing the critical importance of sleep for health and performance.',
+  },
+  {
+    title: 'Elon Musk',
+    author: 'Ashlee Vance',
+    year: 2015,
+    description: 'An in-depth biography of the entrepreneur behind Tesla, SpaceX, and other groundbreaking companies.',
+  },
+  {
+    title: 'Mastery',
+    author: 'Robert Greene',
+    year: 2012,
+    description: 'A guide to achieving mastery in any field, drawing lessons from historical figures and modern masters.',
+  },
+  {
+    title: '12 Rules For Life',
+    author: 'Jordan Peterson',
+    year: 2018,
+    description: 'An antidote to chaos, offering practical wisdom for navigating life\'s complexities and finding meaning.',
+  },
+  {
+    title: 'On Writing Well',
+    author: 'William Zinsser',
+    year: 1976,
+    description: 'A classic guide to writing nonfiction, emphasizing clarity, simplicity, and the craft of effective communication.',
+  },
+  {
+    title: 'Feel-Good Productivity',
+    author: 'Ali Abdaal',
+    year: 2023,
+    description: 'A science-backed approach to productivity that focuses on feeling good while getting things done.',
+  },
+  {
+    title: 'The Art of Learning',
+    author: 'Josh Waitzkin',
+    year: 2007,
+    description: 'A memoir and guide to mastering any skill, from chess to martial arts, through deep learning principles.',
   },
 ];
 ---
@@ -48,7 +96,7 @@ const books = [
       <h1 class="text-4xl font-bold mb-4">Top Books</h1>
       <p class="text-lg text-gray-600 dark:text-gray-400">
         A collection of books I've read and highly recommend. These cover topics from 
-        design and programming to game development and psychology.
+        science and mathematics to writing, productivity, and personal development.
       </p>
     </header>
 
